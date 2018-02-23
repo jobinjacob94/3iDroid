@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+body{
+    font-family: 'Bree Serif', serif;
+    background-image: url(img1.gif), url(img2.png);
+    background-position: left left,right right;
+    background-repeat: repeat-y,no-repeat;
+    margin: -8px;
+  overflow: hidden;
+}
+
+h1{
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+h3{
+    color: white;
+    text-align: center;
+}
+
+button{
+    background-color: white;
+    color: dimgrey;
+    width: 150px;
+    height: 40px;
+    margin: 50px;
+    border-radius: 5px;
+}
+.container{
+    width: 100%;
+}
+
+.container-left{
+    background-color: rgba(100,149,237,0.7);
+    animation-name: left;
+    float: left;
+    text-align: center;
+    height: 100vh;
+    padding-bottom: 10%;
+    display: inline-block;
+    width: 50%;
+    padding-top: 10%;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes left {
+     0%   {background-color: rgba(100,149,237,0.8)}
+    25%  {background-color: rgba(95,158,160,0.8)}
+    50%  {background-color:rgba(30,144,255,0.8)}
+    75% {background-color:rgba(0,139,139,0.8)}
+    100% {background-color: rgba(100,149,237,0.8)}
+}
+
+.container-right{
+    background-color: rgba(128,128,128,0.8);
+    animation: right 10s infinite;
+    float: left;
+    height: 100vh;
+    padding-bottom: 10%;
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    padding-top: 10%;
+}
+@keyframes right {
+     0%   {background-color: rgba(128,128,128,0.8)}
+    25%  {background-color: rgba(173,216,230,0.8)}
+    50%  {background-color:rgba(47,79,79,0.8)}
+    75% {background-color:rgba(112,128,144,0.8)}
+    100% {background-color: rgba(128,128,128,0.8);}
+}
+
+
